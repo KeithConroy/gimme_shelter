@@ -31,6 +31,12 @@
 
   .row
     .small-4.columns
+      = f.label :adopted_at
+    .small-4.columns.end
+      = f.date_field :adopted_at
+
+  .row
+    .small-4.columns
       = f.label :age
     .small-4.columns.end
       = f.select :age, animal_ages_for_select

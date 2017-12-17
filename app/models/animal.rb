@@ -5,6 +5,8 @@ class Animal < ApplicationRecord
 
   include AnimalTypes
 
+  scope :adoptable, -> { where(adopted_at: nil) }
+
   SIZES = {
     small: 'Small',
     medium: 'Medium',
