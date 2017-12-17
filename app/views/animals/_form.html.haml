@@ -1,0 +1,82 @@
+= form_for @animal do |f|
+  .row
+    .small-4.columns
+      = f.label :first_name
+    .small-4.columns.end
+      = f.text_field :first_name
+
+  .row
+    .small-4.columns
+      = f.label :gender
+    .small-4.columns.end
+      = f.text_field :gender
+
+  .row
+    .small-4.columns
+      = f.label :bio
+    .small-4.columns.end
+      = f.text_area :bio
+
+  .row
+    .small-4.columns
+      = f.label :identification_number
+    .small-4.columns.end
+      = f.text_field :identification_number
+
+  .row
+    .small-4.columns
+      = f.label :arrived_at_shelter
+    .small-4.columns.end
+      = f.date_field :arrived_at_shelter
+
+  .row
+    .small-4.columns
+      = f.label :age
+    .small-4.columns.end
+      = f.select :age, Animal::AGES.keys
+
+  .row
+    .small-4.columns
+      = f.label :is_good_with_kids
+    .small-4.columns.end
+      = f.check_box :is_good_with_kids
+
+  .row
+    .small-4.columns
+      = f.label :is_good_with_dogs
+    .small-4.columns.end
+      = f.check_box :is_good_with_dogs
+
+  .row
+    .small-4.columns
+      = f.label :is_good_with_cats
+    .small-4.columns.end
+      = f.check_box :is_good_with_cats
+
+  .row
+    .small-4.columns
+      = f.label :size
+    .small-4.columns.end
+      = f.select :size, Animal::SIZES.keys
+
+  .row
+    .small-4.columns
+      = f.label :color
+    .small-4.columns.end
+      = f.text_field :color
+
+  .row
+    .small-4.columns
+      = f.label :animal_type
+    .small-4.columns.end
+      = f.select :animal_type, Animal::ANIMAL_TYPES.keys
+
+  .row
+    .small-4.columns
+      = f.label :breed
+    .small-4.columns.end
+      = f.select :breed, Animal::ANIMAL_TYPES.values.flatten
+
+  .row
+    .small-8.small-offset-4.columns.end
+      = f.submit

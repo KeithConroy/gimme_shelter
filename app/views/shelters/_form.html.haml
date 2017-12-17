@@ -1,0 +1,58 @@
+= form_for @shelter do |f|
+  .row
+    .small-4.columns
+      = f.label :address_line_1
+    .small-4.columns.end
+      = f.text_field :address_line_1
+
+  .row
+    .small-4.columns
+      = f.label :address_line_2
+    .small-4.columns.end
+      = f.text_field :address_line_2
+
+  .row
+    .small-4.columns
+      = f.label :phone_number
+    .small-4.columns.end
+      = f.text_field :phone_number
+
+  .row
+    .small-4.columns
+      = f.label :email
+    .small-4.columns.end
+      = f.text_field :email
+
+  .row
+    .small-4.columns
+      = f.label :zip_code
+    .small-4.columns.end
+      = f.text_field :zip_code
+
+  .row
+    .small-4.columns
+      = f.label :city
+    .small-4.columns.end
+      = f.text_field :city
+
+  .row
+    .small-4.columns
+      = f.label :state
+    .small-4.columns.end
+      = f.text_field :state
+
+  .row
+    .small-4.columns
+      = f.label :org_name
+    .small-4.columns.end
+      = f.text_field :org_name
+
+  .row
+    .small-4.columns
+      = f.label :subdomain
+    .small-4.columns.end
+      = f.text_field :subdomain
+
+  .row
+    .small-8.small-offset-4.columns.end
+      = f.submit
