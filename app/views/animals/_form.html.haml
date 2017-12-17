@@ -43,6 +43,12 @@
 
   .row
     .small-4.columns
+      = f.label :can_be_shown
+    .small-4.columns.end
+      = f.check_box :can_be_shown
+
+  .row
+    .small-4.columns
       = f.label :is_good_with_kids
     .small-4.columns.end
       = f.check_box :is_good_with_kids
