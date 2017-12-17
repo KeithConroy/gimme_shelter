@@ -6,16 +6,22 @@ class Animal < ApplicationRecord
   include AnimalTypes
 
   SIZES = {
-    small: 'small',
-    medium: 'medium',
-    large: 'large',
-    extra_large: 'extra large'
+    small: 'Small',
+    medium: 'Medium',
+    large: 'Large',
+    extra_large: 'Extra Large'
   }
 
   AGES = {
-    baby: 'baby',
-    young: 'young',
-    adult: 'adult',
-    senior: 'senior'
+    baby: 'Baby',
+    young: 'Young',
+    adult: 'Adult',
+    senior: 'Senior'
+  }
+
+  GENDERS = {
+    male: 'Male',
+    female: 'Female',
+    unknown: 'Unknown'
   }
 end

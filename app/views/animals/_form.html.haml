@@ -9,7 +9,7 @@
     .small-4.columns
       = f.label :gender
     .small-4.columns.end
-      = f.text_field :gender
+      = f.select :gender, animal_genders_for_select
 
   .row
     .small-4.columns
@@ -33,7 +33,7 @@
     .small-4.columns
       = f.label :age
     .small-4.columns.end
-      = f.select :age, Animal::AGES.keys
+      = f.select :age, animal_ages_for_select
 
   .row
     .small-4.columns
@@ -57,7 +57,7 @@
     .small-4.columns
       = f.label :size
     .small-4.columns.end
-      = f.select :size, Animal::SIZES.keys
+      = f.select :size, animal_sizes_for_select
 
   .row
     .small-4.columns
@@ -69,7 +69,7 @@
     .small-4.columns
       = f.label :animal_type
     .small-4.columns.end
-      = f.select :animal_type, Animal::ANIMAL_TYPES.keys
+      = f.select :animal_type, animal_types_for_select
 
   .row
     .small-4.columns
